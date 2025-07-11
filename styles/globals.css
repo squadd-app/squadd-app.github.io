@@ -2,17 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Gradient animasyonu için: */
-@keyframes gradient {
-  0%,
-  100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
+html {
+  scroll-behavior: smooth;
 }
-.animate-gradient {
-  background-size: 200% 200%;
-  animation: gradient 4s ease-in-out infinite;
+
+body {
+  font-family: 'Inter', 'sans-serif';
+}
+
+.footer-gradient {
+  /* background: linear-gradient(90deg, #e44fff 0%, #22d3ee 50%, #ff265b 100%); */
+  background: linear-gradient(90deg, #e44fff 5%, #22d3ee 45%, #ff265b 95%);
+  background-size: cover;
+  background-position: center;
 }

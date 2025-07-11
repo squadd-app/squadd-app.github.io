@@ -1,4 +1,3 @@
-// components/FeaturesSection.jsx
 const features = [
   {
     icon: (
@@ -34,7 +33,7 @@ const features = [
 export default function FeaturesSection() {
   return (
     <section className="bg-white dark:bg-[#17171f] py-20 px-4" id="features">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-center bg-gradient-to-r from-[#e44fff] via-[#22d3ee] to-[#ff265b] text-transparent bg-clip-text">
           What Makes SQUADD Different?
         </h2>
@@ -43,9 +42,12 @@ export default function FeaturesSection() {
         </p>
         <div className="flex flex-col md:flex-row justify-center gap-8">
           {features.map((f, i) => (
-            <div key={i} className="bg-gradient-to-b from-[#f5f6fa] to-[#efeaff] dark:from-[#181828] dark:to-[#232343] rounded-2xl p-8 shadow-lg flex-1 flex flex-col items-center hover:scale-105 transition">
+            <div
+              key={i}
+              className="bg-gradient-to-b from-[#f5f6fa] to-[#efeaff] dark:from-[#181828] dark:to-[#232343] rounded-2xl p-8 shadow-lg flex-1 flex flex-col items-center hover:scale-105 transition min-w-[280px] max-w-[360px] min-h-[250px]"
+            >
               <div className="mb-4">{f.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{f.title}</h3>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-center leading-tight">{f.title}</h3>
               <p className="text-gray-600 dark:text-gray-400 text-center">{f.description}</p>
             </div>
           ))}

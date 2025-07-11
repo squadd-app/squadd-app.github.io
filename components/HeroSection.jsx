@@ -1,4 +1,3 @@
-// components/HeroSection.jsx
 export default function HeroSection() {
   return (
     <section className="flex flex-col items-center justify-center min-h-[60vh] bg-gradient-to-b from-[#121212] to-[#21222d] text-white py-16 px-6">

@@ -1,4 +1,3 @@
-// components/HowItWorksSection.jsx
 const steps = [
   {
     number: 1,
