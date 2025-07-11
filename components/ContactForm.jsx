@@ -14,12 +14,21 @@ export default function ContactForm() {
     setFields({ ...fields, [e.target.name]: e.target.value });
   };
 
+
+
+  const formatedTimestamp = () => {
+    const d = new Date()
+    const date = d.toISOString().split('T')[0];
+    const time = d.toTimeString().split(' ')[0].replace(/:/g, '-');
+    return `${date} ${time}`
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("loading");
     try {
       const res = await fetch(
-        "https://api.sheety.co/9d4c449e4d66d60f5b7b60ffb06da19e/squaddContactUs/sheet1",
+        "https://api.sheety.co/9d4c449e4d66d60f5b7b60ffb06da19e/contactUs/sheet1",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -30,6 +39,7 @@ export default function ContactForm() {
               Handle: fields.handle,
               Agency: fields.agency,
               Message: fields.message,
+              DateTime: formatedTimestamp(),
             },
           }),
         }
