@@ -6,7 +6,7 @@ const features = [
       </svg>
     ),
     title: "Smart Email Integration",
-    description: "Connect your collab inbox. Milo auto-sorts, extracts details, and filters spam offers—no more clutter.",
+    description: "Connect your collab inbox. Dealer Expert AI Agent  auto-sorts, extracts details, and filters spam offers—no more clutter.",
   },
   {
     icon: (
@@ -16,7 +16,7 @@ const features = [
       </svg>
     ),
     title: "AI Deal Scoring",
-    description: "Get instant scores on every offer. Milo matches collabs to your style, audience, and past deals for smarter decisions.",
+    description: "Get instant scores on every offer. Dealer Expert AI Agent  matches collabs to your style, audience, and past deals for smarter decisions.",
   },
   {
     icon: (
@@ -40,20 +40,19 @@ export default function FeaturesSection() {
         <p className="text-lg text-center text-gray-700 dark:text-gray-300 mb-10">
           TikTok creators and agencies get more done in less time. Stop drowning in emails, start growing your brand.
         </p>
-        <div className="flex flex-col md:flex-row justify-center gap-8">
+        <div className="flex flex-col lg:flex-row justify-center gap-4 md:gap-8">
           {features.map((f, i) => (
             <div
               key={i}
-              className="bg-gradient-to-b from-[#f5f6fa] to-[#efeaff] dark:from-[#181828] dark:to-[#232343] rounded-2xl p-8 shadow-lg flex-1 flex flex-col items-center hover:scale-105 transition min-w-[280px] max-w-[360px] min-h-[250px]"
-            >
-              <div className="mb-4">{f.icon}</div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-center leading-tight">{f.title}</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-center">{f.description}</p>
+              className="bg-gradient-to-b from-[#f5f6fa] to-[#efeaff] dark:from-[#181828] dark:to-[#232343] rounded-2xl p-4 md:p-8 shadow-lg flex-1 flex flex-col items-center hover:scale-105 transition w-full max-w-md mx-auto">
+              <div className="mb-3 md:mb-4">{f.icon}</div>
+              <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-center leading-tight">{f.title}</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-center text-sm md:text-base">{f.description}</p>
             </div>
           ))}
         </div>
         <div className="mt-10 text-center text-gray-500 dark:text-gray-400 text-base">
-          <strong>Milo</strong> is just the beginning. <span className="text-[#e44fff] font-semibold">More AI agents coming soon...</span>
+          <strong>Dealer Expert AI Agent </strong> is just the beginning. <span className="text-[#e44fff] font-semibold">More AI agents coming soon...</span>
         </div>
       </div>
     </section>

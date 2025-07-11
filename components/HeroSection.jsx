@@ -14,7 +14,7 @@ export default function HeroSection() {
         Get Early Access
       </a>
       <p className="mt-6 text-xs text-gray-400 font-light">
-        Powered by <span className="font-semibold text-[#e44fff]">Milo</span> – your personal AI deal expert.
+        Powered by <span className="font-semibold text-[#e44fff]">Dealer Expert AI Agent </span> – your personal AI deal expert.
       </p>
     </section>
   );

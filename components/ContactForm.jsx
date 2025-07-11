@@ -51,11 +51,11 @@ export default function ContactForm() {
 
   return (
     <section className="bg-white dark:bg-[#181828] py-20 px-4" id="contact">
-      <div className="max-w-xl mx-auto rounded-xl shadow-xl p-12 bg-gradient-to-b from-[#fff] to-[#efeaff] dark:from-[#232343] dark:to-[#191928]">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] via-[#e44fff] to-[#ff265b] whitespace-nowrap">
+      <div className="w-full max-w-md md:max-w-xl mx-auto rounded-xl shadow-xl p-4 md:p-12 bg-gradient-to-b from-[#fff] to-[#efeaff] dark:from-[#232343] dark:to-[#191928]">
+        <h2 className="text-xl md:text-3xl font-bold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] via-[#e44fff] to-[#ff265b] whitespace-nowrap">
           Get Early Access / Contact Us
         </h2>
-        <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+        <form className="flex flex-col gap-2 md:gap-4" onSubmit={handleSubmit}>
           <input
             type="text"
             name="fullname"
