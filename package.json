@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build && node scripts/nojekyll.js",
     "start": "next start",
-    "deploy": "npm run build && gh-pages -d out"
+    "deploy": "npm run build && touch out/.nojekyll && gh-pages -d out"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
